@@ -1,8 +1,8 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 // import { enableProdMode } from '@angular/core';
 
-import { AppModule } from './app.module';
+import { BBModule } from './bb.module';
 
 
 // enableProdMode();
-platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(BBModule);

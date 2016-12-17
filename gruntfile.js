@@ -134,4 +134,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', ['ts:build', 'sass:build', 'string-replace:build', 'systemjs:build', 'copy:build']);
     grunt.registerTask('devWatch', ['sass:watch', 'connect:localDev', 'watch']);
+    grunt.registerTask('viewBuilt', ['connect:builtSite', 'watch']);
 };
