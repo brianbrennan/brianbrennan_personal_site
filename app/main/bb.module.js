@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var bb_component_1 = require('./bb.component');
 var bb_router_1 = require('../routes/bb.router');
+var mainNav_component_1 = require('../globals/components/main-nav/mainNav.component');
 var mainFooter_component_1 = require('../globals/components/main-footer/mainFooter.component');
 var home_component_1 = require('../home/home.component');
 var BBModule = (function () {
@@ -20,7 +21,7 @@ var BBModule = (function () {
     BBModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, bb_router_1.BBRouterModule],
-            declarations: [bb_component_1.BBComponent, mainFooter_component_1.MainFooterComponent, home_component_1.HomeComponent],
+            declarations: [bb_component_1.BBComponent, mainNav_component_1.MainNavComponent, mainFooter_component_1.MainFooterComponent, home_component_1.HomeComponent],
             bootstrap: [bb_component_1.BBComponent],
             providers: [platform_browser_1.Title]
         }), 

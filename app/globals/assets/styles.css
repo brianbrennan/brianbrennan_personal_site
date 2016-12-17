@@ -560,6 +560,19 @@ a {
   color: #3FC1C9;
   text-decoration: underline; }
 
+/* Main Nav Component */
+.main-nav nav {
+  float: right; }
+
+.main-nav ul {
+  margin: 0;
+  padding: 0; }
+
+.main-nav li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px; }
+
 /* Main Footer Component */
 .main-footer {
   background-color: #53354A;
