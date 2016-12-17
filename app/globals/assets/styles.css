@@ -531,7 +531,7 @@
  *
  * Table of Contents:
  *
- * - SUSY
+ * - BOOTSTRAP
  * - FONTS
  * - TYPE SIZING
  * - SPACING
@@ -544,13 +544,28 @@
  *
  * - ELEMENTS
  */
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  body: 0; }
+
 body {
   background-color: #F4F4F4;
-  color: #22313F; }
+  color: #22313F;
+  font-family: "Roboto", sans-serif; }
 
 a {
   color: #3FC1C9;
   text-decoration: underline; }
+
+/* Main Footer Component */
+.main-footer {
+  background-color: #53354A;
+  padding: 60px 0;
+  font-size: 13px;
+  color: #E8E2E2; }
 
 /* Home Component*/
 

@@ -9,29 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var home_component_1 = require('../home/home.component');
-var bbRoutes = [
-    {
-        path: '',
-        component: home_component_1.HomeComponent
+var MainFooterComponent = (function () {
+    function MainFooterComponent() {
     }
-];
-var BBRouterModule = (function () {
-    function BBRouterModule() {
-    }
-    BBRouterModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forRoot(bbRoutes)
-            ],
-            exports: [
-                router_1.RouterModule
-            ]
+    MainFooterComponent = __decorate([
+        core_1.Component({
+            selector: 'main-footer',
+            templateUrl: './app/globals/components/main-footer/main-footer.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], BBRouterModule);
-    return BBRouterModule;
+    ], MainFooterComponent);
+    return MainFooterComponent;
 }());
-exports.BBRouterModule = BBRouterModule;
-//# sourceMappingURL=bb.router.js.map
+exports.MainFooterComponent = MainFooterComponent;
+//# sourceMappingURL=mainFooter.component.js.map
