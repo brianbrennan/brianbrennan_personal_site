@@ -1,0 +1,56 @@
+/*
+ * Variables for site
+ *
+ * Table of Contents:
+ *
+ * - SUSY
+ * - FONTS
+ * - TYPE SIZING
+ * - SPACING
+ * - COLORS
+ */
+
+//SUSY
+$susy: (
+        columns: 12,
+        gutters: 1/4,
+        math: fluid,
+        output: float,
+        gutter-position: inside,
+);
+
+//FONTS
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i|Slabo+27px');
+
+$slabo: 'Slabo 27px', serif;
+$roboto: 'Roboto', sans-serif;
+
+//TYPE SIZING
+$minFontSize: 9px;
+$smFontSize:  11px;
+$regFontSize: 15px;
+$medFontSize: 20px;
+$lgFontSize:  32px;
+$xlFontSize:  48px;
+$xxlFontSize: 72px;
+
+
+//SPACING
+$mic:   3px;
+$tny:   8px;
+$sm:    15px;
+$reg:   30px;
+$med:   60px;
+$lg:    120px;
+$xl:    180px;
+$xxl:   300px;
+
+//COLORS
+$white: #F4F4F4;
+$black: #22313F;
+$brown: #53354A;
+$red: #F73859;
+$blue: #3FC1C9;
+$lightBlue: #3DD2CC;
+$lightGreen: #6DECB9;
+$grey: #E8E2E2;
