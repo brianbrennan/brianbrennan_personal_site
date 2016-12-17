@@ -5,4 +5,14 @@ import { Component } from '@angular/core';
     templateUrl: './app/main/app.html'
 })
 
-export class BBComponent {}
+export class BBComponent {
+    minHeight: number;
+
+    constructor(){
+        this.setMinHeight();
+    }
+
+    private setMinHeight() {
+        this.minHeight = window.innerHeight;
+    }
+}

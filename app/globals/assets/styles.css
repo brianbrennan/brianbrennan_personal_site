@@ -549,7 +549,7 @@
 
 html, body {
   margin: 0;
-  body: 0; }
+  padding: 0; }
 
 body {
   background-color: #F4F4F4;
@@ -575,6 +575,9 @@ a {
 
 /* Main Footer Component */
 .main-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   background-color: #53354A;
   padding: 60px 0;
   font-size: 13px;
