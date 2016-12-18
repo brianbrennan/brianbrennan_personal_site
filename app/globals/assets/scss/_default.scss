@@ -4,6 +4,8 @@
  * Table of Contents:
  *
  * - ELEMENTS
+ * - SHARED CLASSES
+ * - GLOBAL CLASSES
  */
 
 
@@ -56,4 +58,32 @@ h5 {
 
 h6 {
     font-size: $minFontSize;
+}
+
+p {
+    line-height: 1.8;
+}
+
+blockquote {
+    border-left: 1px solid $red;
+    margin-left:0;
+    padding-left: $reg;
+    font-size: $medFontSize;
+    font-style: italic;
+}
+
+//SHARED CLASSES
+
+.text-wrapper {
+    width: 700px;
+}
+
+.page {
+    padding-bottom: $xl;
+}
+
+//GLOBAL CLASSES
+
+.site-wrapper {
+    position: relative;
 }

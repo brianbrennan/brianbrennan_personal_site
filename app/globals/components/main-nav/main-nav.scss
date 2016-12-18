@@ -1,4 +1,6 @@
 .main-nav {
+    margin-top: $tny;
+
     nav {
         float: right;
     }
@@ -11,7 +13,16 @@
     li {
         display: inline-block;
         list-style: none;
-        margin: 0 $sm;
+        margin: $tny $sm;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: $blue;
+        }
     }
 
     .logo {

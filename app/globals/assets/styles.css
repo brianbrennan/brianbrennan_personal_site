@@ -543,6 +543,8 @@
  * Table of Contents:
  *
  * - ELEMENTS
+ * - SHARED CLASSES
+ * - GLOBAL CLASSES
  */
 * {
   box-sizing: border-box; }
@@ -582,23 +584,46 @@ h5 {
 h6 {
   font-size: 12px; }
 
+p {
+  line-height: 1.8; }
+
+blockquote {
+  border-left: 1px solid #F73859;
+  margin-left: 0;
+  padding-left: 30px;
+  font-size: 20px;
+  font-style: italic; }
+
+.text-wrapper {
+  width: 700px; }
+
+.page {
+  padding-bottom: 180px; }
+
+.site-wrapper {
+  position: relative; }
+
 /* Main Nav Component */
-.main-nav nav {
-  float: right; }
-
-.main-nav ul {
-  margin: 0;
-  padding: 0; }
-
-.main-nav li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 15px; }
-
-.main-nav .logo {
-  background: url("./img/logo-01.svg") no-repeat;
-  width: 180px;
-  height: 60px; }
+.main-nav {
+  margin-top: 8px; }
+  .main-nav nav {
+    float: right; }
+  .main-nav ul {
+    margin: 0;
+    padding: 0; }
+  .main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 8px 15px; }
+  .main-nav a {
+    text-decoration: none;
+    color: inherit; }
+    .main-nav a:hover {
+      color: #3FC1C9; }
+  .main-nav .logo {
+    background: url("./img/logo-01.svg") no-repeat;
+    width: 180px;
+    height: 60px; }
 
 /* Main Footer Component */
 .main-footer {
@@ -606,9 +631,17 @@ h6 {
   width: 100%;
   bottom: 0;
   background-color: #53354A;
-  padding: 60px 0;
+  padding: 15px 0;
   font-size: 13px;
   color: #E8E2E2; }
+  .main-footer a {
+    text-decoration: none;
+    color: inherit; }
+    .main-footer a:hover {
+      color: #F4F4F4; }
+  .main-footer li {
+    list-style: none;
+    margin-bottom: 15px; }
 
 /* Home Component*/
 

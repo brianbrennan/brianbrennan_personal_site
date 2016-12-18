@@ -3,7 +3,21 @@
     width: 100%;
     bottom: 0;
     background-color: $brown;
-    padding: $med 0;
+    padding: $sm 0;
     font-size: $smFontSize;
     color: $grey;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: $sm;
+    }
 }
