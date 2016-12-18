@@ -15,14 +15,14 @@ var bb_router_1 = require('../routes/bb.router');
 var mainNav_component_1 = require('../globals/components/main-nav/mainNav.component');
 var mainFooter_component_1 = require('../globals/components/main-footer/mainFooter.component');
 var home_component_1 = require('../home/home.component');
-var page_component_1 = require('../page/page.component');
+var about_component_1 = require('../page/about/about.component');
 var BBModule = (function () {
     function BBModule() {
     }
     BBModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, bb_router_1.BBRouterModule],
-            declarations: [bb_component_1.BBComponent, mainNav_component_1.MainNavComponent, mainFooter_component_1.MainFooterComponent, home_component_1.HomeComponent, page_component_1.PageComponent],
+            declarations: [bb_component_1.BBComponent, mainNav_component_1.MainNavComponent, mainFooter_component_1.MainFooterComponent, home_component_1.HomeComponent, about_component_1.AboutComponent],
             bootstrap: [bb_component_1.BBComponent],
             providers: [platform_browser_1.Title]
         }), 

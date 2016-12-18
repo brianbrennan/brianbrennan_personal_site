@@ -13,4 +13,10 @@
         list-style: none;
         margin: 0 $sm;
     }
+
+    .logo {
+        background: url('./img/logo-01.svg') no-repeat;
+        width: $xl;
+        height: $med;
+    }
 }

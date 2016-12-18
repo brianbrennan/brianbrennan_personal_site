@@ -554,11 +554,33 @@ html, body {
 body {
   background-color: #F4F4F4;
   color: #22313F;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
 
 a {
   color: #3FC1C9;
   text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Slabo 27px", serif; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 12px; }
 
 /* Main Nav Component */
 .main-nav nav {
@@ -572,6 +594,11 @@ a {
   display: inline-block;
   list-style: none;
   margin: 0 15px; }
+
+.main-nav .logo {
+  background: url("./img/logo-01.svg") no-repeat;
+  width: 180px;
+  height: 60px; }
 
 /* Main Footer Component */
 .main-footer {

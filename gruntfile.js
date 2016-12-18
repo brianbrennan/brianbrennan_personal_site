@@ -120,13 +120,17 @@ module.exports = function(grunt) {
             localDev: {
                 options: {
                     port: 9000,
-                    base: './'
+                    base: './',
+                    open: true,
+                    index: './index.html'
                 }
             },
             builtSite: {
                 options: {
                     port: 7000,
-                    base: './dist/'
+                    base: './dist/',
+                    open: true,
+                    index: './dist/index.html'
                 }
             }
         }
