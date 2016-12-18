@@ -588,7 +588,7 @@ p {
   line-height: 1.8; }
 
 blockquote {
-  border-left: 1px solid #F73859;
+  border-left: 1px solid #3DD2CC;
   margin-left: 0;
   padding-left: 30px;
   font-size: 20px;
@@ -623,14 +623,14 @@ blockquote {
   .main-nav .logo {
     background: url("./img/logo-01.svg") no-repeat;
     width: 180px;
-    height: 60px; }
+    height: 30px; }
 
 /* Main Footer Component */
 .main-footer {
   position: absolute;
   width: 100%;
   bottom: 0;
-  background-color: #53354A;
+  background-color: #22313F;
   padding: 15px 0;
   font-size: 13px;
   color: #E8E2E2; }
@@ -644,5 +644,11 @@ blockquote {
     margin-bottom: 15px; }
 
 /* Home Component*/
+.home-page .hero h3 {
+  font-size: 120px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */

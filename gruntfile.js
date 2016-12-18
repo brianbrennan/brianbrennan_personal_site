@@ -95,7 +95,7 @@ module.exports = function(grunt) {
         copy: {
             build: {
                 expand: true,
-                src: ['./app/**/*.html','./node_modules/core-js/client/shim.min.js',
+                src: ['./app/**/*.html','./app/**/*.svg','./app/**/*.png','./node_modules/core-js/client/shim.min.js',
                     './node_modules/zone.js/dist/zone.js', './node_modules/reflect-metadata/Reflect.js',
                     './node_modules/systemjs/dist/system.src.js'],
                 dest: 'dist'
