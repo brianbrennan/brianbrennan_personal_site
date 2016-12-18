@@ -9,34 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var home_component_1 = require('../home/home.component');
-var page_component_1 = require('../page/page.component');
-var bbRoutes = [
-    {
-        path: '',
-        component: home_component_1.HomeComponent
-    },
-    {
-        path: 'about',
-        component: page_component_1.PageComponent
+var PageComponent = (function () {
+    function PageComponent() {
     }
-];
-var BBRouterModule = (function () {
-    function BBRouterModule() {
-    }
-    BBRouterModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forRoot(bbRoutes)
-            ],
-            exports: [
-                router_1.RouterModule
-            ]
+    PageComponent = __decorate([
+        core_1.Component({
+            selector: 'page',
+            template: '<h1>About</h1>'
         }), 
         __metadata('design:paramtypes', [])
-    ], BBRouterModule);
-    return BBRouterModule;
+    ], PageComponent);
+    return PageComponent;
 }());
-exports.BBRouterModule = BBRouterModule;
-//# sourceMappingURL=bb.router.js.map
+exports.PageComponent = PageComponent;
+//# sourceMappingURL=page.component.js.map

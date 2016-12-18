@@ -1,4 +1,4 @@
-<div class="site-wrapper" [style.minHeight.px]="minHeight">
+<div class="site-wrapper" [style.minHeight.px]="minHeight" (window:resize)="setMinHeight()">
     <main-nav></main-nav>
 
     <router-outlet></router-outlet>

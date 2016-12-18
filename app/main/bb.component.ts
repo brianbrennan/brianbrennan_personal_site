@@ -12,7 +12,7 @@ export class BBComponent {
         this.setMinHeight();
     }
 
-    private setMinHeight() {
+    public setMinHeight() {
         this.minHeight = window.innerHeight;
     }
 }
