@@ -3,7 +3,15 @@
         font-size: $lg;
         font-family: $roboto;
         font-weight: bold;
-        letter-spacing: $tny;
-        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: $regFontSize;
+        color: $black;
+        font-family: $roboto;
+        font-weight: 400;
+        margin-left: $tny;
     }
 }

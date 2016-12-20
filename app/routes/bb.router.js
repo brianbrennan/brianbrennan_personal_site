@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var home_component_1 = require('../home/home.component');
-var about_component_1 = require('../page/about/about.component');
+var page_component_1 = require('../page/page.component');
 var bbRoutes = [
     {
         path: '',
@@ -19,7 +19,7 @@ var bbRoutes = [
     },
     {
         path: 'about',
-        component: about_component_1.AboutComponent
+        component: page_component_1.PageComponent
     }
 ];
 var BBRouterModule = (function () {

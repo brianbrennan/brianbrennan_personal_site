@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AboutComponent = (function () {
-    function AboutComponent() {
+var http_1 = require('@angular/http');
+require('rxjs/add/operator/toPromise');
+var PageService = (function () {
+    function PageService(http) {
+        this.http = http;
     }
-    AboutComponent = __decorate([
-        core_1.Component({
-            selector: 'page',
-            templateUrl: './app/page/about/about.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AboutComponent);
-    return AboutComponent;
+    PageService.prototype.getPage = function (pageName) {
+        return this.http.get('/app/data/pages.json')
+            .toPromise()
+            .then(function (response) { return response.json()[pageName]; });
+    };
+    PageService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], PageService);
+    return PageService;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.PageService = PageService;
+//# sourceMappingURL=page.service.js.map
