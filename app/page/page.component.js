@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var page_service_1 = require('../globals/services/page.service');
 var page_model_1 = require('../globals/models/page.model');
+var marked = require('marked');
 var PageComponent = (function () {
     function PageComponent(location, pageService) {
         var _this = this;
@@ -21,6 +22,7 @@ var PageComponent = (function () {
         this.pageService.getPage(location.path().replace('/', ''))
             .then(function (data) {
             _this.page = data;
+            _this.page.content = marked(_this.page.content);
         });
     }
     PageComponent = __decorate([

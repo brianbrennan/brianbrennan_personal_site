@@ -4,6 +4,8 @@ import { Location } from '@angular/common';
 import { PageService } from '../globals/services/page.service';
 import { Page } from '../globals/models/page.model';
 
+import * as marked from 'marked';
+
 @Component({
     selector: 'page',
     templateUrl: './app/page/page.html',
@@ -20,6 +22,7 @@ export class PageComponent {
         this.pageService.getPage(location.path().replace('/', ''))
             .then(data => {
                 this.page = data;
+                this.page.content = marked(this.page.content);
             });
     }
 }
